@@ -21,8 +21,6 @@
  */
 #pragma once
 
-#define CONFIG_EXAMPLES_DIR "Creality/Ender-3 Pro/BigTreeTech SKR Mini E3 2.0"
-
 /**
  * Custom Status Screen bitmap
  *
@@ -36,8 +34,8 @@
 //
 // Status Screen Logo bitmap
 //
-//#define STATUS_LOGO_Y            8
-//#define STATUS_LOGO_WIDTH       39
+#define STATUS_LOGO_Y            8
+#define STATUS_LOGO_WIDTH       39
 
 const unsigned char status_logo_bmp[] PROGMEM = {
   B11111000,B00000001,B10000000,B00000000,B00001100,
@@ -65,7 +63,7 @@ const unsigned char status_logo_bmp[] PROGMEM = {
 #define STATUS_BED_ANIM
 #define STATUS_HEATERS_XSPACE   20
 #if HOTENDS < 2
-  #define STATUS_HEATERS_X      10
+  #define STATUS_HEATERS_X      48
   #define STATUS_BED_X          72
 #else
   #define STATUS_HEATERS_X      40
